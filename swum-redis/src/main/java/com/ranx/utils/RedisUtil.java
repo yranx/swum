@@ -58,6 +58,13 @@ public class RedisUtil {
 		return redisTemplate.opsForValue().get(key);
 	}
 	
+	//读取缓存
+	public String getStr(final String key) {
+//		ValueOperations<Serializable, Object> operations = redisTemplate.opsForValue();
+//		return operations.get(key);
+		return (String) redisTemplate.opsForValue().get(key);
+	}
+	
 	public Object get(final String key, final String hashKey) {
 		return redisTemplate.opsForHash().get(key, hashKey);
 	}
