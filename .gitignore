@@ -18,7 +18,7 @@ target
 *.iws
 *.iml
 *.ipr
-pom.xml
+
 
 ### NetBeans ###
 /nbproject/private/
@@ -28,6 +28,8 @@ pom.xml
 /nbdist/
 /.nb-gradle/
 *.log
+
+pom.xml
 
 .mymetadata
 .myumldata
